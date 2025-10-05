@@ -11,11 +11,11 @@ const FAQ = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <Section id="faq">
+    <Section id="faq" background="white">
       <Container maxWidth="xl">
-        <div className="px-4 space-y-3">
-          <h2 className="text-xl sm:text-[22px] font-bold text-[#171712] mb-3 sm:mb-4">
-            FAQ
+        <div className="px-4 sm:px-5">
+          <h2 className="text-xl sm:text-[22px] font-bold text-[#171712] mb-4 sm:mb-5">
+            常見問題
           </h2>
 
           <div className="space-y-2 sm:space-y-3">
