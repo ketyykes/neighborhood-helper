@@ -8,10 +8,10 @@ const Hero = () => {
 			{/* 背景圖片 */}
 			<div className="absolute inset-0 z-0">
 				<Image
-					src="/images/hero-bg.png"
+					src="/images/chicken-bg.png"
 					alt="Hero Background"
 					fill
-					className="object-cover"
+					className="object-cover  object-top"
 					priority
 				/>
 				{/* 漸層遮罩 */}
