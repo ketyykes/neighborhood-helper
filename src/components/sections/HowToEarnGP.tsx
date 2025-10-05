@@ -2,7 +2,7 @@ import Link from "next/link";
 import Container from "@/components/ui/Container";
 import Section from "@/components/ui/Section";
 import Card from "@/components/ui/Card";
-import Button from "@/components/ui/button";
+import Button from "@/components/ui/MyButton";
 import { GP_METHODS, GP_NOTE, GP_PS, FORM_URL } from "@/lib/constants";
 
 const HowToEarnGP = () => {

@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import Button from "@/components/ui/button";
+import Button from "@/components/ui/MyButton";
 import { NAV_ITEMS } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 

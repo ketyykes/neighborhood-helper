@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Container from "@/components/ui/Container";
-import Button from "@/components/ui/button";
+import Button from "@/components/ui/MyButton";
 import { FOOTER_CTA, FORM_URL } from "@/lib/constants";
 
 const FooterCTA = () => {

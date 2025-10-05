@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Container from "@/components/ui/Container";
-import Button from "@/components/ui/button";
+import Button from "@/components/ui/MyButton";
 import MobileMenu from "@/components/ui/MobileMenu";
 import { NAV_ITEMS } from "@/lib/constants";
 
