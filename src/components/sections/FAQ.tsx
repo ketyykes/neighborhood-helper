@@ -20,7 +20,7 @@ const FAQ = () => {
 
 					<div className="space-y-2 sm:space-y-3">
 						{FAQ_ITEMS.map((item, index) => (
-							<Card key={item.question} className="px-3 sm:px-4 py-2">
+							<Card key={item.question} className="px-3 sm:px-4 py-2 gap-0">
 								<button
 									onClick={() =>
 										setOpenIndex(openIndex === index ? null : index)

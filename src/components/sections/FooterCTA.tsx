@@ -18,6 +18,7 @@ const FooterCTA = () => {
 							variant="default"
 							size="lg"
 							className="w-full sm:w-auto bg-[#FAB538] text-[#171712] hover:bg-[#E5A429] focus-visible:ring-[#FAB538]"
+							confettiEffect="basic"
 						/>
 					</div>
 				</div>

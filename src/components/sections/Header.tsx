@@ -57,6 +57,7 @@ const Header = () => {
 							variant="default"
 							size="lg"
 							className="bg-[#FAB538] text-[#171712] hover:bg-[#E5A429] focus-visible:ring-[#FAB538]"
+							confettiEffect="fireworks"
 						/>
 					</nav>
 
