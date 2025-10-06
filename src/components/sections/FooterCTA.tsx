@@ -1,7 +1,6 @@
-import Link from "next/link";
 import Container from "@/components/ui/Container";
-import { Button } from "@/components/ui/button";
-import { FOOTER_CTA, FORM_URL } from "@/lib/constants";
+import { FormDialog } from "@/components/ui/FormDialog";
+import { FOOTER_CTA } from "@/lib/constants";
 
 const FooterCTA = () => {
 	return (
@@ -14,11 +13,12 @@ const FooterCTA = () => {
 						</h2>
 					</div>
 					<div className="flex justify-center">
-						<Link href={FORM_URL} target="_blank" rel="noopener noreferrer">
-							<Button variant="default" size="lg" className="w-full sm:w-auto bg-[#FAB538] text-[#171712] hover:bg-[#E5A429] focus-visible:ring-[#FAB538]">
-								{FOOTER_CTA.cta}
-							</Button>
-						</Link>
+						<FormDialog
+							triggerText={FOOTER_CTA.cta}
+							variant="default"
+							size="lg"
+							className="w-full sm:w-auto bg-[#FAB538] text-[#171712] hover:bg-[#E5A429] focus-visible:ring-[#FAB538]"
+						/>
 					</div>
 				</div>
 			</Container>

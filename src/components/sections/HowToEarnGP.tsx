@@ -1,9 +1,8 @@
-import Link from "next/link";
 import Container from "@/components/ui/Container";
 import Section from "@/components/ui/Section";
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { GP_METHODS, GP_NOTE, GP_PS, FORM_URL } from "@/lib/constants";
+import { FormDialog } from "@/components/ui/FormDialog";
+import { GP_METHODS, GP_NOTE, GP_PS } from "@/lib/constants";
 
 const HowToEarnGP = () => {
 	return (
@@ -92,15 +91,12 @@ const HowToEarnGP = () => {
 
 						{/* 表單按鈕 */}
 						<div className="flex justify-center pt-2">
-							<Link href={FORM_URL} target="_blank" rel="noopener noreferrer">
-								<Button
-									variant="default"
-									size="lg"
-									className="w-full sm:w-auto bg-[#FAB538] text-[#171712] hover:bg-[#E5A429] focus-visible:ring-[#FAB538]"
-								>
-									填寫表單，累積 GP
-								</Button>
-							</Link>
+							<FormDialog
+								triggerText="填寫表單，累積 GP"
+								variant="default"
+								size="lg"
+								className="w-full sm:w-auto bg-[#FAB538] text-[#171712] hover:bg-[#E5A429] focus-visible:ring-[#FAB538]"
+							/>
 						</div>
 					</div>
 				</div>

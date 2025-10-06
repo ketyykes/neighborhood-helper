@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Container from "@/components/ui/Container";
-import { Button } from "@/components/ui/button";
+import { FormDialog } from "@/components/ui/FormDialog";
 import MobileMenu from "@/components/ui/MobileMenu";
 import { NAV_ITEMS } from "@/lib/constants";
 
@@ -52,9 +52,12 @@ const Header = () => {
 								</Link>
 							))}
 						</div>
-						<Button variant="default" size="lg" className="bg-[#FAB538] text-[#171712] hover:bg-[#E5A429] focus-visible:ring-[#FAB538]">
-							立即分享
-						</Button>
+						<FormDialog
+							triggerText="立即分享"
+							variant="default"
+							size="lg"
+							className="bg-[#FAB538] text-[#171712] hover:bg-[#E5A429] focus-visible:ring-[#FAB538]"
+						/>
 					</nav>
 
 					{/* 漢堡選單按鈕 - 手機和平板版 */}

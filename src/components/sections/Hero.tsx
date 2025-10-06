@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
+import { FormDialog } from "@/components/ui/FormDialog";
 import { HERO } from "@/lib/constants";
 
 const Hero = () => {
@@ -29,9 +29,12 @@ const Hero = () => {
 					</p>
 				</div>
 				<div className="flex justify-center">
-					<Button variant="default" size="lg" className="w-full sm:w-auto bg-[#FAB538] text-[#171712] hover:bg-[#E5A429] focus-visible:ring-[#FAB538]">
-						{HERO.cta}
-					</Button>
+					<FormDialog
+						triggerText={HERO.cta}
+						variant="default"
+						size="lg"
+						className="w-full sm:w-auto bg-[#FAB538] text-[#171712] hover:bg-[#E5A429] focus-visible:ring-[#FAB538]"
+					/>
 				</div>
 			</div>
 		</section>
