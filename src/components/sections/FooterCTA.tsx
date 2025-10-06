@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Container from "@/components/ui/Container";
-import Button from "@/components/ui/MyButton";
+import { Button } from "@/components/ui/button";
 import { FOOTER_CTA, FORM_URL } from "@/lib/constants";
 
 const FooterCTA = () => {
@@ -15,7 +15,7 @@ const FooterCTA = () => {
 					</div>
 					<div className="flex justify-center">
 						<Link href={FORM_URL} target="_blank" rel="noopener noreferrer">
-							<Button variant="primary" size="lg" className="w-full sm:w-auto">
+							<Button variant="default" size="lg" className="w-full sm:w-auto bg-[#FAB538] text-[#171712] hover:bg-[#E5A429] focus-visible:ring-[#FAB538]">
 								{FOOTER_CTA.cta}
 							</Button>
 						</Link>

@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Container from "@/components/ui/Container";
-import Button from "@/components/ui/MyButton";
+import { Button } from "@/components/ui/button";
 import MobileMenu from "@/components/ui/MobileMenu";
 import { NAV_ITEMS } from "@/lib/constants";
 
@@ -52,7 +52,7 @@ const Header = () => {
 								</Link>
 							))}
 						</div>
-						<Button variant="primary" size="lg">
+						<Button variant="default" size="lg" className="bg-[#FAB538] text-[#171712] hover:bg-[#E5A429] focus-visible:ring-[#FAB538]">
 							立即分享
 						</Button>
 					</nav>

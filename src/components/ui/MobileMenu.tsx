@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import Button from "@/components/ui/MyButton";
+import { Button } from "@/components/ui/button";
 import { NAV_ITEMS } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 
@@ -98,7 +98,7 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
 
 						{/* CTA 按鈕 */}
 						<div className="p-4 border-t border-[#E5E8EB]">
-							<Button variant="primary" size="lg" onClick={onClose}>
+							<Button variant="default" size="lg" onClick={onClose} className="bg-[#FAB538] text-[#171712] hover:bg-[#E5A429] focus-visible:ring-[#FAB538]">
 								立即分享
 							</Button>
 						</div>

@@ -2,7 +2,7 @@ import Link from "next/link";
 import Container from "@/components/ui/Container";
 import Section from "@/components/ui/Section";
 import { Card, CardContent } from "@/components/ui/card";
-import Button from "@/components/ui/MyButton";
+import { Button } from "@/components/ui/button";
 import { GP_METHODS, GP_NOTE, GP_PS, FORM_URL } from "@/lib/constants";
 
 const HowToEarnGP = () => {
@@ -94,9 +94,9 @@ const HowToEarnGP = () => {
 						<div className="flex justify-center pt-2">
 							<Link href={FORM_URL} target="_blank" rel="noopener noreferrer">
 								<Button
-									variant="primary"
+									variant="default"
 									size="lg"
-									className="w-full sm:w-auto"
+									className="w-full sm:w-auto bg-[#FAB538] text-[#171712] hover:bg-[#E5A429] focus-visible:ring-[#FAB538]"
 								>
 									填寫表單，累積 GP
 								</Button>
