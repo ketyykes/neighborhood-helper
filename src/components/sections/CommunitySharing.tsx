@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Container from "@/components/ui/Container";
 import Section from "@/components/ui/Section";
-import Card from "@/components/ui/Card";
+import { Card, CardContent } from "@/components/ui/card";
 import { CHANNEL_FEATURES, CHANNEL_NOTE } from "@/lib/constants";
 
 const Channel = () => {
@@ -20,10 +20,9 @@ const Channel = () => {
 						{CHANNEL_FEATURES.map((feature) => (
 							<Card
 								key={feature.title}
-								variant="bordered"
 								className="p-5 sm:p-6 hover:shadow-md transition-shadow"
 							>
-								<div className="space-y-3 sm:space-y-4">
+								<CardContent className="space-y-3 sm:space-y-4 p-0">
 									{/* 圖示 */}
 									<div className="w-8 h-8 sm:w-10 sm:h-10 relative">
 										<Image
@@ -43,7 +42,7 @@ const Channel = () => {
 											{feature.description}
 										</p>
 									</div>
-								</div>
+								</CardContent>
 							</Card>
 						))}
 					</div>

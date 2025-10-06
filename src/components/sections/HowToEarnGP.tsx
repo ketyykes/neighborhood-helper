@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Container from "@/components/ui/Container";
 import Section from "@/components/ui/Section";
-import Card from "@/components/ui/Card";
+import { Card, CardContent } from "@/components/ui/card";
 import Button from "@/components/ui/MyButton";
 import { GP_METHODS, GP_NOTE, GP_PS, FORM_URL } from "@/lib/constants";
 
@@ -15,7 +15,7 @@ const HowToEarnGP = () => {
 					</h2>
 
 					{/* 桌面版表格 */}
-					<Card variant="bordered" className="hidden md:block">
+					<Card className="hidden md:block">
 						{/* 表頭 */}
 						<div className="flex bg-white">
 							<div className="flex-[309] px-4 py-3 border-b border-[#E5E8EB]">
@@ -59,8 +59,8 @@ const HowToEarnGP = () => {
 					{/* 手機和平板版卡片式佈局 */}
 					<div className="md:hidden space-y-3">
 						{GP_METHODS.map((method) => (
-							<Card key={method.title} variant="bordered" className="p-4">
-								<div className="space-y-3">
+							<Card key={method.title} className="p-4">
+								<CardContent className="space-y-3 p-0">
 									<div className="flex items-start justify-between gap-4">
 										<div className="flex-1">
 											<h3 className="text-base font-bold text-[#171712] mb-1">
@@ -76,7 +76,7 @@ const HowToEarnGP = () => {
 											</p>
 										</div>
 									</div>
-								</div>
+								</CardContent>
 							</Card>
 						))}
 					</div>
