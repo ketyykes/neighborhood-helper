@@ -19,7 +19,7 @@ const Header = () => {
 					<div className="flex items-center gap-2 sm:gap-4">
 						<div className="w-4 h-4 relative flex-shrink-0">
 							<Image
-								src="/images/chicken-bg.png"
+								src="/images/chicken.png"
 								alt="Logo"
 								fill
 								className="object-contain"
